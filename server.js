@@ -18,6 +18,7 @@ app.use(cors);
 app.get('/api/message', message.get);
 app.post('/api/message', checkAtuhenticated, message.post);
 app.post('/auth/register', auth.register);
+app.post('/auth/login', auth.login);
 
 // Connections
 mongoose.Promise = global.Promise;
